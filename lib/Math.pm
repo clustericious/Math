@@ -26,8 +26,8 @@ package Math {
 
   get '/fib/:n' => sub {
     my($c) = @_;
-    $c->tx->res->headers->{n} = $c->param('n');
-    $c->render(autodata => [ _fib($c->param('n')) ] );
+    my $n = $c->param('n');
+    $c->render(autodata => [ _fib($n) ] );
   };
 
 }

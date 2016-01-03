@@ -17,7 +17,7 @@ $t->get_ok('/fib/6')
 
 my $client = Math::Client->new;
 
-is $client->fib(6), 8;
+is $client->fib(6), 8, 'fib(6) = 8';
 
 done_testing;
 
