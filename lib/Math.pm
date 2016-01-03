@@ -5,7 +5,6 @@ package Math {
 
   use base qw( Clustericious::App);
   use Clustericious::RouteBuilder;
-  use Clustericious::Log;
 
   get '/add/:a/:b' => sub {
     my($c) = @_;
