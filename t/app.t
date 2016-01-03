@@ -15,10 +15,6 @@ $t->get_ok('/fib/6')
   ->status_is(200)
   ->json_is('/0', 8);
 
-my $client = Math::Client->new;
-
-is $client->fib(6), 8, 'fib(6) = 8';
-
 done_testing;
 
 __DATA__
